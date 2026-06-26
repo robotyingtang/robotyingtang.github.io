@@ -3,7 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -17,42 +17,94 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+I am a Ph.D. student in Computer Science and Technology at Huazhong University of Science and Technology. My research focuses on efficient and adaptive visual representation learning, including multi-task representation learning, vision foundation model distillation, Mixture-of-Experts / dynamic routing, feature compression, and long-term visual correspondence.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+My current work studies how to analyze, compress, specialize, and recombine visual knowledge. I am particularly interested in building deployable vision systems that transfer complementary knowledge from large vision foundation models into efficient student models, while preserving semantic consistency and reducing negative transfer across tasks and teachers.
+
+I have published papers in ICML, ACM MM, ICME, AAAI, and related multimedia / computer vision venues. Please see my <a href='https://scholar.google.com/citations?user=_MNsF6gAAAAJ'>Google Scholar</a> for the latest publication list and citations <strong><span id='total_cit'>[TODO: citation count]</span></strong>. You can also enable a Google Scholar badge here:
+<a href='https://scholar.google.com/citations?user=_MNsF6gAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2026.[TODO]*: &nbsp;🎉 PRISM was accepted to ICML 2026.
+- *2025.04*: &nbsp;Temporal Coherent Object Flow for Multi-Object Tracking was published at AAAI 2025.
+- *2024.10*: &nbsp;Autogenic Language Embedding for Coherent Point Tracking was published at ACM MM 2024.
+- *2024.07*: &nbsp;Agnostic Feature Compression with Semantic Guided Channel Importance Analysis was published at ICME 2024.
 
-# 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+# 📝 Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/prism.png' alt="PRISM" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[PRISM: Synergizing Vision Foundation Models via Self-organized Expert Specialization](https://openreview.net/forum?id=3v5l5TepEe)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Ying Tang**, Dong Li, Youjia Zhang, Zikai Song, Junqing Yu, Wei Yang
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Project**](https://github.com/robotyingtang/PRISM-VFM) / [**Paper**](https://openreview.net/forum?id=3v5l5TepEe) <strong><span class='show_paper_citations' data='_MNsF6gAAAAJ:[TODO_PRISM_CITATION_ID]'></span></strong>
+
+- We introduce PRISM, a dual-stream Mixture-of-Experts framework for multi-teacher vision foundation model distillation. PRISM decomposes heterogeneous VFM knowledge into specialized expert subspaces and dynamically recomposes them for downstream dense prediction tasks.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/icme2024_feature_compression.png' alt="Agnostic Feature Compression" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Agnostic Feature Compression with Semantic Guided Channel Importance Analysis](https://doi.org/10.1109/ICME57554.2024.10687920)
+
+**Ying Tang**, Wei Yang, Junqing Yu, Zikai Song
+
+[**Paper**](https://doi.org/10.1109/ICME57554.2024.10687920) <strong><span class='show_paper_citations' data='_MNsF6gAAAAJ:[TODO_ICME2024_CITATION_ID]'></span></strong>
+
+- We propose a task-agnostic intermediate feature compression framework. It uses Grad-CAM and semantic segmentation to separate essential and peripheral feature channels, then applies different compression strengths to reduce transmission cost with minimal accuracy loss and no retraining.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2024</div><img src='images/altrack.png' alt="ALTrack" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Autogenic Language Embedding for Coherent Point Tracking](https://arxiv.org/abs/2407.20730)
+
+Zikai Song, **Ying Tang**, Run Luo, Lintao Ma, Junqing Yu, Yi-Ping Phoebe Chen, Wei Yang
+
+[**Paper**](https://arxiv.org/abs/2407.20730) / [**Project**](https://github.com/SkyeSong38/ALTrack) <strong><span class='show_paper_citations' data='_MNsF6gAAAAJ:[TODO_ACMMM2024_CITATION_ID]'></span></strong>
+
+- We introduce an autogenic language-assisted tracking framework that learns text embeddings from visual features and integrates them into visual representations, improving semantic consistency for long-term point tracking without explicit text annotations.
+</div>
+</div>
+
+## Selected Collaborative Publications
+
+- [Temporal Coherent Object Flow for Multi-Object Tracking](https://doi.org/10.1609/aaai.v39i7.32749), Zikai Song, Run Luo, Lintao Ma, **Ying Tang**, Yi-Ping Phoebe Chen, Junqing Yu, Wei Yang, **AAAI 2025**.
+- [Exploiting Appearance Re-Emergence for Robust Visual Tracking](https://doi.org/10.1145/3769748.3773347), Zikai Song, Yunyao Zhang, **Ying Tang**, Junqing Yu, Wei Yang, **MMAsia 2025**.
+- [MA-VLAD: a fine-grained local feature aggregation scheme for action recognition](https://doi.org/10.1007/s00530-024-01341-9), Na Feng, **Ying Tang**, Zikai Song, Junqing Yu, Yi-Ping Phoebe Chen, Wei Yang, **Multimedia Systems 2024**.
+- [Distractor-Aware Tracker with a Domain-Special Optimized Benchmark for Soccer Player Tracking](https://doi.org/10.1145/3460426.3463629), Zikai Song, Zhiwen Wan, Wei Yuan, **Ying Tang**, Junqing Yu, Yi-Ping Phoebe Chen, **ICMR 2021**.
+
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024*: Huawei Scholarship.
+- *[TODO]*: Ph.D. Graduate Scholarship.
+- *[TODO]*: First-Class Graduate Scholarship.
+- *[TODO]*: Graduate Freshman Scholarship.
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+
+# 📖 Education
+- *2022.09 - 2027.06 (expected)*, Ph.D. student in Computer Science and Technology, Huazhong University of Science and Technology.
+- *2020.09 - 2022.06*, M.S. in Computer Science and Technology, Huazhong University of Science and Technology.
+- *2016.09 - 2020.07*, B.S. in Computer Science and Technology, Jilin University.
+
+
+# 💻 Skills
+- Deep learning frameworks: PyTorch, Python, Linux, Git.
+- Research topics: vision foundation models, knowledge distillation, multi-task learning, Mixture-of-Experts, feature compression, semantic correspondence, visual tracking.
+- Experimental practice: large-scale training / fine-tuning, ablation study, SOTA comparison, paper writing, and reproducible experiment organization.
+
 
 # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *[TODO]*: Add invited talks, seminars, or poster presentations if needed.
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+
+# 📌 Misc
+- Email: [t_ying@hust.edu.cn](mailto:t_ying@hust.edu.cn)
+- Google Scholar: [Ying Tang](https://scholar.google.com/citations?user=_MNsF6gAAAAJ)
+- GitHub: [robotyingtang](https://github.com/robotyingtang)
